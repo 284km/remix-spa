@@ -9,10 +9,11 @@ export default defineConfig({
   base: "/remix-spa/",
   plugins: [
     remix({
-      basename: "/remix-spa/",
       ssr: false,
+      basename: "/remix-spa/",
       buildEnd(args) {
         if (!args.viteConfig.isProduction) return;
+
         const buildPath = args.viteConfig.build.outDir;
         copyFileSync(
           join(buildPath, "index.html"),
