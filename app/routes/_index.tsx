@@ -14,7 +14,7 @@ export default function Index() {
       <h1>Welcome to Remix (SPA Mode)</h1>
       <ul>
         <li>
-          <Link to="/sample">
+          <Link to="sample">
             Sample
           </Link>
         </li>
